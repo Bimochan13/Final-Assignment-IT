@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artifact</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style>
+        *
+          {
+            box-sizing:border-box;    
+          }
+        #container
+          {
+            width:1140px;
+            min-height:800px;
+            margin:auto auto;
+          }
+        body
+          {
+            font-family:Calibri;
+            padding:10px;
+            background:#F1E5AC;
+          }
+        .header
+          {
+            padding:20px;
+            text-align:center;
+            background-color: :#FBF7E6;
+          }
+        .header h1
+          {
+            font-size:50px;
+          }
+        .topnav
+          {
+            overflow:hidden;
+            background-color:#FBF7E6;
+            height:100px;
+            border:1px solid #04252c;
+          }
+        .topnav a
+            {
+              float:left;
+              display:block;
+              color: #04252c;
+              font-family: helvetica;
+              text-align:center;
+              padding:17px 20px;
+              text-decoration:none;
+              border:2px hidden black;
+              line-height:30px;
+            }
+        .topnav a:hover 
+            {
+              background-color:#ddd;
+              color:white;
+            }
+      .leftcolumn
+        {
+          float:left;
+          width:75%;
+        }
+      /*Right column*/
+      .rightcolumn
+        {
+          float:left;
+          width:25%;
+          background-color:#FBF7E6;
+          padding-left:20px;
+          position:relative;
+          top:20px;
+          height:1417px;
+          border:1px  solid #04252c;
+        }
+  
+      .card
+        {
+          background-color:#FBF7E6;
+          padding:20px;
+          margin-top:20px;
+          border:1px  solid #04252c;
+        }
+        .card1
+        {
+          background-color:##FBF7E6;
+          padding:20px;
+          margin-top:20px;
+          border:1px  solid #04252c;
+          position:relative;
+          left:-10px;
+        }
+      .row:after
+        {
+          content:"";
+          display:table;
+          clear:both;
+        }
+      /*Footer*/
+      .footer
+        {
+          padding:20px;
+          text-align:center;
+          background:#FBF7E6;
+          margin-top:20px;
+          border:1px  solid #04252c;
+          height:350px;
+        }
+        .logo
+          {
+            position:relative;
+            top: -20px;
+          }
+
+        iframe
+          {
+            position:relative;
+            left:-125px;
+          }  
+         
+        h2,p,h5,h3,h4
+          {
+            color:#04252c;
+          }
+        ul
+          {
+            padding-left: 10px;
+          }
+        ul li
+          {
+            color:#04252c;
+            line-height: 35px;
+          }
+           a
+        {
+          text-decoration: none;
+          color:black;
+        }
+          .foot1
+          {
+            display: block;
+            float: left;
+            padding-left:70px;
+            padding-right:70px;
+          }
+          .innerfoot
+          {
+            padding-left:25px;
+          }
+        .foot2
+          {
+            display: block;
+            float:left;
+            padding-left:40px;
+            padding-right:140px;
+            padding-top: 20px;
+          }
+          .foot3
+          {
+            display: block;
+            float: right;
+            padding-right:130px;
+          }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+        <img src="al.jpg" height="145px" width="200px" class="logo" style="float: right;">
+        <a href="index.html" style="float:left;"></i>Home</a>
+        <a href="about.html"  style="float:left;">About</a>
+        <a href="photogallery.html"  style="float:left;">Photo Gallery</a>
+        <a href="History.html" style="float:left;">History</a>
+        <a href="contact.html"  style="float:left;">Contact us</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="a11.jpg" style="width:100%">
+          <div class="text">Statue</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="a12.jpg" style="width:100%">
+          <div class="text">Sculptures</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="a13.jpg" style="width:100%">
+          <div class="text">Art</div>
+      </div>
+      <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() 
+        {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) 
+            {
+              slides[i].style.display = "none";
+            }
+          slideIndex++;
+          if (slideIndex > slides.length) 
+            {
+              slideIndex = 1;
+            }
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000);
+        }
+      </script>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+      <div class="row">
+        <div class="rightcolumn">
+          <div classs="card">
+            <h3>Lucky Image</h3>
+            <img src="a10.jpg" height="230px" width="250px"> 
+          </div>
+          <div class="card1">
+            <h3>Feedbacks</h3>
+            <img src="a15.jpg" height="150px" width="150px" alt="person1">
+            <h4>Ricky Astheticali</h4>
+            <p>“I noticed how well this page updates it's information. This site is awesome, understanding, and resourceful. This website certainly displayed a good example of how websites should be.”  </p>
+            <img src="a17.jpg" height="150px" width="150px" alt="person2">
+            <h4>Rosa Mendosa</h4>
+            <p>“This is one of my  favorite sites. Recently, however, I noticed that it is getting slower to update the information. I was wondering if there is a reason for the change.”</p>
+          </div>
+          <div class="card" style="margin-right: 10px; ">
+            <h3>Special Announcement!!</h3>
+            <p>We are really excited to announce that we are going to open our first artifact shop. We hope that people will support us in the next upcoming days as usual.</p>
+          </div>
+        </div>
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Artifacts</h2>
+            <img src="a9.jpg" height="400px" width="800px" alt="Artifacts">
+            <p>An artifact is an object made by a human being. Artifacts include art, tools, and clothing made by people of any time and place. The term can also be used to refer to the remains of an object, such as a shard of broken pottery or glassware..</p>
+            <p>Artifacts are immensely useful to scholars who want to learn about a culture. Archaeologists excavate areas in which ancient cultures lived and use the artifacts found there to learn about the past. Many ancient cultures did not have a written language or did not actively record their history, so artifacts sometimes provide the only clues about how the people lived. </p>
+          </div>
+          <div class="card">
+            <h2>Egyptian Artifact</h2>
+            <img src="a19.jpeg" height="500px" width="750px" alt="Egyptain">
+            <p>The ancient Egyptian civilization has been blessed with a vast long history so when it comes to archaeological discoveries, very few countries can measure up to the ancient Egyptian artifacts.</p>
+            <p>For more than 4000 years the ancient Egyptian civilization created some of the most enchanting and beautiful artifacts the world as ever seen that remains virtually unchanged until over current day.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot1">
+           <h1>Follow us on:</h1>
+           <div class="innerfoot">
+             <a href="https://www.instagram.com/" target="_blank"><img src="log2.jpg" width="25px" height="25px" alt="Instagram"></a><p style="color:#04252c;">Artifact13</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="log1.png" width="25px" height="25px" alt="Facebook"></a><p style="color:#04252c;">Artifact13</p>
+            <a href="https://mail.google.com/" target="_blank"><img src="log3.png" width="25px" height="25px" alt="Gmail"></a><br><a href="artifact13@gmail.com" style="color:#04252c;">artifact13@gmail.com</a>
+           </div>
+            
+        </div>
+        <div class="foot2">
+          <img src="al.jpg" height="200px" width="300px" class="logo">
+          <h3 style="color:#04252c;"> Copyright © Artifact13.io. All Rights Reserved</h3>
+          <p style="color:#04252c; " >Address: Cairo,Egypt</p>
+        </div>
+        <div class="foot3">
+          <h1>Site map</h1>
+           <ul type="none">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="photogallery.html"><li>Photo Gallery</li></a>
+            <a href="History.html"><li>History</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+          </ul>
+         </div>
+    </div>
+  </body>
+</html>

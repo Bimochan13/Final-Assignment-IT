@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style type="text/css">
+             *
+          {
+            box-sizing:border-box;    
+          }
+        #container
+          {
+            width:1140px;
+            min-height:800px;
+            margin:auto auto;
+          }
+        #container2
+          {
+            width:1140px;
+            min-height:800px;
+            margin:auto auto;
+          }
+        body
+          {
+            font-family:Calibri;
+            padding:10px;
+            background:#F1E5Ac;
+          }
+        .header
+          {
+            padding:20px;
+            text-align:center;
+            background-color: #FBF7E6;
+          }
+        .header h1
+          {
+            font-size:50px;
+          }
+        .topnav
+          {
+            overflow:hidden;
+            background-color:#FBF7E6;
+            height:90px;
+            border:1px #04252c;
+          }
+        .topnav a
+            {
+              font-family: helvetica;
+              float:left;
+              display:block;
+              color: #04252c;
+              text-align:center;
+              padding:17px 20px;
+              text-decoration:none;
+              border:1px hidden #04252c;
+              line-height:30px;
+            }
+        .topnav a:hover 
+            {
+             background-color:#ddd;
+              color:white;
+            }
+      .leftcolumn
+        {
+          float:left;
+          width:100%;
+        }
+        
+      /*Right column*/
+      .rightcolumn
+        {
+          float:right;
+          width:25%;
+          background-color:#FBF7E6;
+          padding-left:20px;
+          padding-top: 20px;
+          position: relative;
+          top: 20px;
+          height:1413px;
+          border:1px #04252c;
+        }
+  
+      .card
+        {
+          background-color:#FBF7E6;
+          padding:20px;
+          margin-top:20px;
+          border:1px #04252c;
+        }
+        .card1
+        {
+          background-color:#FBF7E6;
+          padding:20px;
+          margin-top:20px;
+          border:1px #04252c;
+          position:relative;
+          left:-10px;
+        }
+
+        .card2
+        {
+          background-color:#FBF7E6;
+          padding:20px;
+          margin-top:20px;
+          border:1px #04252c;
+          position:relative;
+          left:-10px;
+        }
+
+      .row:after
+        {
+          content:"";
+          display:table;
+          clear:both;
+        }
+      /*Footer*/
+      .footer
+        {
+          padding:20px;
+          text-align:center;
+          background:#FBF7E6;
+          margin-top:20px;
+          border:1px #04252c;
+          height:350px;
+        }
+      @media screen and (max-width:800px)
+        {
+          .leftcolumn, .rightcolumn
+            {
+              width:100%;
+              padding:0;
+            }
+        }
+      @media screen and (max-width:400px)
+        {
+        .topnav a
+          {
+            float:none;
+            width:100%;
+          }
+        }
+
+      .logo
+       {
+          position:relative;
+          top: -20px;
+       }
+      .h4
+          {
+            color: #04252c;
+            position:relative;
+            left: -95px;
+          }  
+        .h4_2
+          {
+            color:#04252c;
+            position:relative;
+            top: -314px;
+            left: 410px;
+          }  
+        h2,p,h5,h3,h4
+          {
+            color:#04252c;
+          }
+         a
+         {
+          text-decoration: none;
+          color:#04252c;
+         }
+
+         a:hover
+         {
+          background-color:#FBF7E6;
+          color:grey;
+         }
+
+        ol li,ul li 
+          {
+            color: black; 
+          }
+        .bottom_text
+          {
+            position:relative;
+            top: -310px;
+            right:-400px;
+          }
+
+
+           ul
+          {
+            padding-left: 10px;
+          }
+        ul li
+          {
+            color:#04252c;
+            line-height: 35px;
+          }
+          .foot1
+          {
+            display: block;
+            float: left;
+            padding-left:70px;
+            padding-right:70px;
+          }
+          .innerfoot
+          {
+            padding-left:25px;
+          }
+        .foot2
+          {
+            display: block;
+            float:left;
+            padding-left:40px;
+            padding-right:140px;
+            padding-top: 20px;
+          }
+          .foot3
+          {
+            display: block;
+            style = float: right;
+            padding-right:70px;
+            padding-left: 70px;
+          }
+      .form
+        {
+          width:300px;
+          padding:15px 40px 40px;
+          border:1px solid #04252c;
+          border-radius: 5px;
+          background-color: white;
+          margin: 4% auto;
+        }
+      
+      .contact-banner 
+  {
+    background-image:#FBF7E6;
+    color: #04252c;
+    padding: 40px;
+  }
+
+.invalid 
+  {
+    border: 1px solid red;
+  }
+
+.mb-2 
+  {
+    margin-bottom: 20px;
+  }
+
+.mb-4 
+  {
+    margin-bottom: 40px;
+  }
+
+.contact-description 
+  {
+    margin-bottom: 40px;
+    color: #04252c;
+  }
+
+input 
+  {
+    padding: 10px;
+    border-radius: 5px;
+    width: 280px;
+    border:1px solid #04252c;
+    font-size: 18px;
+    outline: none;
+    color: #333;
+  }
+
+.form-control 
+    {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+.error 
+  {
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+label 
+  {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#04252c ;
+  }
+
+.hide 
+  {
+    opacity: 0;
+  }
+
+textarea 
+  {
+    width: 560px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    height: 200px;
+    font-size: 18px;
+  }
+
+button 
+  {
+    color: black;
+    padding: 20px;
+    border: 1px solid #04252c;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+button:hover 
+  {
+    background-color:#04252c;
+    color:#FBF7E6;
+  }
+
+form 
+  {
+    padding: 40px;
+  }
+
+hr 
+  {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background-color:#FBF7E6;
+  }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="topnav">
+      <img src="al.jpg" height="145px" width="200px" class="logo" style="float: right;">
+        <a href="index.html" style="float:left;"></i>Home</a>
+        <a href="about.html"  style="float:left;">About</a>
+        <a href="photogallery.html"  style="float:left;">Photo Gallery</a>
+        <a href="History.html" style="float:left;">History</a>
+        <a href="contact.html"  style="float:left;">Contact us</a>
+      </div>
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card" style="height:1367px">
+              <div class="contact-banner">
+
+                <h1 align="center">Contact Us</h1>
+                <div style="text-align: center " style="font-family:helvetica">
+                <p class="contact-description">
+                  We request you to fill in the form below and
+                  submit for your queries. Thank you!!
+                </div>
+                </p>
+                </div>
+                <form name="contact-form">
+                <div class="form-control">
+                  <label>Full Name:</label>
+                  <input name="name" placeholder="First and Last Name" />
+                  <div class="error hide">Name is required</div>
+                  </div>
+                   
+                   
+
+                <div class="form-control">
+                  <label>Email:</label>
+                  <input name="email"placeholder="e.g. your_email@example.com"/>
+                  <div class="error hide">Email is invalid</div>
+                </div>
+
+                <div class="form-control">
+                  <label>Phone:</label>
+                  <input name="phone">
+                  <div class="error hide">Phone is invalid</div>
+                </div>
+
+                <div class="form-control">
+                  <label>Message:</label>
+                  <textarea name="message"></textarea>
+                  <div class="error hide">Message is required</div>
+                </div>
+                <button type="submit">SUBMIT FORM</button>
+                </form>
+                <script type="text/javascript">
+                    const form = document.querySelector("form[name='contact-form']");
+                    const nameInput = document.querySelector("input[name='name']");
+                    const emailInput = document.querySelector("input[name='email']");
+                    const phoneInput = document.querySelector("input[name='phone']");
+                    const messageInput = document.querySelector("textarea[name='message']");
+
+                    nameInput.isValid = () => !!nameInput.value;
+                    emailInput.isValid = () => isValidEmail(emailInput.value);
+                    phoneInput.isValid = () => isValidPhone(phoneInput.value);
+                    messageInput.isValid = () => !!messageInput.value;
+
+                    const inputFields = [nameInput, emailInput, phoneInput, messageInput];
+
+                    const isValidEmail = (email) => {
+                      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                      return re.test(String(email).toLowerCase());
+                    };
+
+                    const isValidPhone = (phone) => {
+                      const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+                      return re.test(String(phone).toLowerCase());
+                    };
+
+                    let shouldValidate = false;
+                    let isFormValid = false;
+
+                    const validateInputs = () => {
+                      console.log("we are here");
+                      if (!shouldValidate) return;
+
+                      isFormValid = true;
+                      inputFields.forEach((input) => {
+                        input.classList.remove("invalid");
+                        input.nextElementSibling.classList.add("hide");
+
+                        if (!input.isValid()) {
+                          input.classList.add("invalid");
+                          isFormValid = false;
+                          input.nextElementSibling.classList.remove("hide");
+                        }
+                      });
+                    };
+
+                    form.addEventListener("submit", (e) => {
+                      e.preventDefault();
+                      shouldValidate = true;
+                      validateInputs();
+                      if (isFormValid) {
+                        // TODO: DO AJAX REQUEST
+                      }
+                    });
+
+                    inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+                </script>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389552708!2d31.188423585500143!3d30.0596184702878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2snp!4v1628527944769!5m2!1sen!2snp" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+     <div class="footer">
+      <div class="foot1">
+           <h1>Follow us on:</h1>
+           <div class="innerfoot">
+            <a href="https://www.instagram.com/" target="_blank"><img src="log2.jpg" width="25px" height="25px" alt="Instagram"></a><p style="color:#04252c;">Artifact13</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="log1.png" width="25px" height="25px" alt="Facebook"></a><p style="color:#04252c;">Artifact13</p>
+            <a href="https://mail.google.com/" target="_blank"><img src="log3.png" width="25px" height="25px" alt="Gmail"></a><br><a href="artifact13@gmail.com" style="color:#04252c;">artifact13@gmail.com</a>
+           </div>   
+        </div>
+        <div class="foot2">
+          <img src="al.jpg" height="200px" width="300px" class="logo">
+          <h3 style="color:#04252c;"> Copyright © Artifact13.io. All Rights Reserved</h3>
+          <p style="color:#04252c; " >Address: Cairo,Egypt<br>
+
+          </p>
+        </div>
+        <div class="foot3">
+          <h1>Site map</h1>
+           <ul type="none">
+           <ul type="none">
+           <a href="index.html"><li>Home</li></a>
+           <a href="about.html"><li>About</li></a>
+           <a href="photogallery.html"><li>Photo Gallery</li></a>
+          <a href="History.html"><li>History</li></a>
+          <a href="contact.html"><li>Contact Us</li></a>         
+          </ul>
+        </div> 
+  </div>
+  </body>
+</html>   
